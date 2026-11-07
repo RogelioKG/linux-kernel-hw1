@@ -1,0 +1,13 @@
+rm /usr/sbin/hw1-init
+write tests/init.sh /usr/sbin/hw1-init
+sif /usr/sbin/hw1-init mode 0100755
+rm /root/q1.c
+write tests/q1.c /root/q1.c
+rm /root/q2.c
+write tests/q2.c /root/q2.c
+rm /root/q1
+write build/q1 /root/q1
+sif /root/q1 mode 0100755
+rm /root/q2
+write build/q2 /root/q2
+sif /root/q2 mode 0100755
